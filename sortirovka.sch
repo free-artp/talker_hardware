@@ -388,10 +388,32 @@ For more documentation, please visit http://www.raspberrypi.org/documentation/ha
 <wire x1="2.3" y1="-1.45" x2="-2.3" y2="-1.45" width="0.2032" layer="21"/>
 <wire x1="-2.3" y1="-1.45" x2="-2.3" y2="-1" width="0.2032" layer="21"/>
 <wire x1="3.175" y1="1" x2="3.175" y2="-1" width="0.2032" layer="21"/>
-<smd name="A" x="-2.15" y="0" dx="1.27" dy="1.47" layer="1" rot="R180"/>
-<smd name="C" x="2.15" y="0" dx="1.27" dy="1.47" layer="1"/>
+<smd name="A" x="-2.15" y="0" dx="1.4732" dy="1.47" layer="1" rot="R180"/>
+<smd name="C" x="2.15" y="0" dx="1.4732" dy="1.47" layer="1"/>
 <text x="0" y="1.651" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.651" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SFH6106">
+<description>&lt;b&gt;SMD 4&lt;/b&gt;&lt;p&gt;
+Source: http://www.vishay.com/docs/83673/sfh618.pdf</description>
+<wire x1="2.315" y1="3.4975" x2="2.315" y2="-3.4975" width="0.1524" layer="21"/>
+<wire x1="-2.315" y1="-1.085" x2="-2.315" y2="3.4975" width="0.1524" layer="21"/>
+<wire x1="-2.315" y1="3.4975" x2="2.315" y2="3.4975" width="0.1524" layer="51"/>
+<wire x1="2.315" y1="-3.4975" x2="-2.315" y2="-3.4975" width="0.1524" layer="51"/>
+<wire x1="-2.315" y1="-2.13" x2="-2.315" y2="-1.085" width="0.1524" layer="21" curve="180"/>
+<wire x1="-2.315" y1="-3.4975" x2="-2.315" y2="-2.13" width="0.1524" layer="21"/>
+<wire x1="-2.315" y1="-2.13" x2="-2.315" y2="-1.085" width="0.1524" layer="21"/>
+<smd name="1" x="-1.27" y="-4.77" dx="1.78" dy="1.55" layer="1"/>
+<smd name="2" x="1.27" y="-4.77" dx="1.78" dy="1.55" layer="1"/>
+<smd name="3" x="1.27" y="4.77" dx="1.78" dy="1.55" layer="1" rot="R180"/>
+<smd name="4" x="-1.27" y="4.77" dx="1.78" dy="1.55" layer="1" rot="R180"/>
+<text x="-2.54" y="-3.175" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-3.175" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-5.195" x2="-0.889" y2="-4.47" layer="51"/>
+<rectangle x1="0.889" y1="-5.195" x2="1.651" y2="-4.47" layer="51"/>
+<rectangle x1="0.889" y1="4.47" x2="1.651" y2="5.195" layer="51" rot="R180"/>
+<rectangle x1="-1.651" y1="4.47" x2="-0.889" y2="5.195" layer="51" rot="R180"/>
+<wire x1="2.315" y1="-2.8625" x2="-2.315" y2="-2.8625" width="0.1524" layer="51"/>
 </package>
 <package name="SMD4">
 <description>&lt;b&gt;SMD 4&lt;/b&gt;&lt;p&gt;
@@ -526,9 +548,9 @@ Source: http://www.vishay.com/docs/83673/sfh618.pdf</description>
 <description>&lt;b&gt;LI BATTERY&lt;/b&gt; Varta</description>
 <wire x1="-0.635" y1="8.255" x2="0.635" y2="8.255" width="0.254" layer="21"/>
 <wire x1="0" y1="8.89" x2="0" y2="7.62" width="0.254" layer="21"/>
-<wire x1="-0.635" y1="-6.35" x2="0.635" y2="-6.35" width="0.254" layer="21"/>
-<pad name="+" x="0" y="12.3825" drill="1.1176" diameter="2.54" shape="octagon"/>
-<pad name="-" x="0" y="-8.89" drill="1.1176" diameter="2.54" shape="octagon"/>
+<wire x1="-0.635" y1="-9.8425" x2="0.635" y2="-9.8425" width="0.254" layer="21"/>
+<pad name="+" x="0" y="12.065" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="-" x="0" y="-7.3025" drill="1.1176" diameter="2.54" shape="octagon"/>
 <text x="-2.54" y="11.43" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="5.08" y="-1.905" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <text x="-2.921" y="-5.08" size="1.27" layer="21" ratio="10">Lit.3V</text>
@@ -1031,7 +1053,18 @@ Source: http://www.vishay.com/docs/83673/sfh618.pdf</description>
 <gate name="A" symbol="OK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SMD4">
+<device name="?" package="SMD4">
+<connects>
+<connect gate="A" pin="A" pad="1"/>
+<connect gate="A" pin="C" pad="2"/>
+<connect gate="A" pin="COL" pad="3"/>
+<connect gate="A" pin="EMIT" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="REAL" package="SFH6106">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -14087,56 +14120,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="pinhead">
-<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="1X01">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PINHD1">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X01">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply2">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
 GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -14255,8 +14238,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="200"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="200"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="200"/>
-<part name="OC1" library="MyLib" deviceset="SFH6106" device=""/>
-<part name="OC2" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC1" library="MyLib" deviceset="SFH6106" device="REAL"/>
+<part name="OC2" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
@@ -14299,19 +14282,19 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY3" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND1" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND1" device=""/>
-<part name="OC3" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC3" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$4" library="MyLib" deviceset="NSI45020AT1G" device="SOD-123"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND1" device=""/>
-<part name="OC4" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC4" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$5" library="MyLib" deviceset="NSI45020AT1G" device="SOD-123"/>
 <part name="SUPPLY7" library="supply2" deviceset="GND1" device=""/>
-<part name="OC5" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC5" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
@@ -14327,7 +14310,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY12" library="supply2" deviceset="GND1" device=""/>
 <part name="D9" library="MyLib" deviceset="DIODE" device="1N4007"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND1" device=""/>
-<part name="OC6" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC6" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
@@ -14335,19 +14318,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY14" library="supply2" deviceset="GND1" device=""/>
 <part name="D10" library="MyLib" deviceset="DIODE" device="1N4007"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND1" device=""/>
-<part name="OC7" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC7" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+24V" device=""/>
-<part name="OC8" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC8" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
-<part name="OC9" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC9" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
-<part name="OC10" library="MyLib" deviceset="SFH6106" device=""/>
+<part name="OC10" library="MyLib" deviceset="SFH6106" device="REAL"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+24V" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
@@ -14367,15 +14349,15 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="E3.5-8"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="0207/10" value="120"/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="0207/10" value="47"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="0207/10" value="47"/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="0207/10" value="560"/>
-<part name="R19" library="rcl" deviceset="R-EU_" device="0207/10" value="560"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="0207/10" value="15"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="0207/10" value="15"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="0207/10" value="1k5"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="0207/10" value="1k5"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="R20" library="rcl" deviceset="R-EU_" device="0207/10" value="560"/>
+<part name="R20" library="rcl" deviceset="R-EU_" device="0207/10" value="10"/>
 <part name="C4" library="rcl" deviceset="CPOL-EU" device="E3.5-8"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
 </parts>
@@ -14508,7 +14490,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="OC10" gate="A" x="279.4" y="7.62"/>
 <instance part="GND13" gate="1" x="269.24" y="2.54"/>
 <instance part="P+6" gate="1" x="287.02" y="17.78"/>
-<instance part="JP2" gate="G$1" x="45.72" y="50.8"/>
 <instance part="+3V11" gate="G$1" x="43.18" y="154.94"/>
 <instance part="GND24" gate="1" x="299.72" y="124.46"/>
 <instance part="C8" gate="G$1" x="279.4" y="132.08"/>
@@ -14987,20 +14968,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="86.36" y="137.16"/>
 </segment>
 </net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="Q5" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="G$1" pin="X1"/>
-<wire x1="35.56" y1="139.7" x2="45.72" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="X2"/>
-<pinref part="Q5" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
@@ -15336,8 +15303,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="111.76" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="58.42" x2="38.1" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -15422,6 +15387,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="X10" gate="-3" pin="KL"/>
 <pinref part="R20" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="X1"/>
+<pinref part="Q5" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="G$1" pin="X2"/>
+<wire x1="35.56" y1="134.62" x2="45.72" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
