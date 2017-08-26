@@ -1,0 +1,4 @@
+raspi-config - разрешить i2c
+
+https://cdn-learn.adafruit.com/downloads/pdf/adding-a-real-time-clock-to-raspberry-pi.pdf
+apt-get install python-smbus i2c-tools
