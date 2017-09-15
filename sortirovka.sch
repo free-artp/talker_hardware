@@ -640,6 +640,39 @@ For more documentation, please visit http://www.raspberrypi.org/documentation/ha
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
+<package name="MA306">
+<wire x1="4.445" y1="2.54" x2="4.445" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.905" x2="-4.445" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="0" width="0.127" layer="21" curve="-180"/>
+<wire x1="-0.381" y1="0.635" x2="-0.381" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="0.254" x2="-0.127" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="-0.254" x2="0.127" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="0.127" y1="-0.254" x2="0.127" y2="0.254" width="0.127" layer="21"/>
+<wire x1="0.127" y1="0.254" x2="-0.127" y2="0.254" width="0.127" layer="21"/>
+<wire x1="0.381" y1="0.635" x2="0.381" y2="0" width="0.127" layer="21"/>
+<wire x1="0.381" y1="0" x2="0.381" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.381" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.381" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="2.54" x2="-3.556" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="2.54" x2="1.905" y2="2.54" width="0.127" layer="21"/>
+<wire x1="4.064" y1="2.54" x2="4.445" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-1.905" x2="-3.556" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-1.905" x2="1.905" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-1.905" x2="4.064" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="2.54" x2="-1.524" y2="2.54" width="0.127" layer="51"/>
+<wire x1="1.905" y1="2.54" x2="4.064" y2="2.54" width="0.127" layer="51"/>
+<wire x1="-3.556" y1="-1.905" x2="-1.524" y2="-1.905" width="0.127" layer="51"/>
+<wire x1="1.905" y1="-1.905" x2="4.064" y2="-1.905" width="0.127" layer="51"/>
+<smd name="4" x="-2.54" y="1.905" dx="1.27" dy="1.905" layer="1"/>
+<smd name="1" x="-2.54" y="-1.27" dx="1.27" dy="1.905" layer="1"/>
+<smd name="2" x="2.921" y="-1.27" dx="1.27" dy="1.905" layer="1"/>
+<smd name="3" x="2.921" y="2.032" dx="1.27" dy="1.905" layer="1"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RPI3-CON">
@@ -937,6 +970,22 @@ For more documentation, please visit http://www.raspberrypi.org/documentation/ha
 <pin name="X2" x="-10.16" y="-2.54" length="short" direction="out"/>
 <pin name="GND" x="-10.16" y="-7.62" length="short" direction="pwr"/>
 <pin name="VCC" x="-10.16" y="7.62" length="short" direction="pwr"/>
+</symbol>
+<symbol name="Q1">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="2.286" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="pad" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="point" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1423,6 +1472,22 @@ For more documentation, please visit http://www.raspberrypi.org/documentation/ha
 <connect gate="G$1" pin="VCC" pad="8"/>
 <connect gate="G$1" pin="X1" pad="1"/>
 <connect gate="G$1" pin="X2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MA306" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="Q1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MA306">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8093,6 +8158,8 @@ Source: http://www.tracopower.com/datasheet_g/ten3-d.pdf</description>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="3k3"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="3k3"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
+<part name="Q1" library="MyLib" deviceset="MA306" device=""/>
+<part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8178,6 +8245,8 @@ Source: http://www.tracopower.com/datasheet_g/ten3-d.pdf</description>
 <instance part="R10" gate="G$1" x="152.4" y="-5.08" rot="R90"/>
 <instance part="R11" gate="G$1" x="160.02" y="-5.08" rot="R90"/>
 <instance part="+3V5" gate="G$1" x="152.4" y="2.54"/>
+<instance part="Q1" gate="G$1" x="111.76" y="-22.86" rot="R90"/>
+<instance part="+3V6" gate="G$1" x="68.58" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -8260,6 +8329,12 @@ Source: http://www.tracopower.com/datasheet_g/ten3-d.pdf</description>
 <wire x1="160.02" y1="0" x2="152.4" y2="0" width="0.1524" layer="91"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <junction x="152.4" y="0"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+<wire x1="58.42" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="71.12" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8672,10 +8747,10 @@ Source: http://www.tracopower.com/datasheet_g/ten3-d.pdf</description>
 <segment>
 <pinref part="X1" gate="G$1" pin="GPIO02"/>
 <wire x1="111.76" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="63.5" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="88.9" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
-<label x="71.12" y="71.12" size="1.778" layer="95"/>
+<label x="91.44" y="63.5" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="88.9" y1="63.5" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SDA"/>
@@ -8688,12 +8763,12 @@ Source: http://www.tracopower.com/datasheet_g/ten3-d.pdf</description>
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
-<wire x1="58.42" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="68.58" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="GPIO03"/>
 <wire x1="86.36" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
-<label x="71.12" y="68.58" size="1.778" layer="95"/>
+<wire x1="86.36" y1="60.96" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<label x="91.44" y="60.96" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="58.42" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SCL"/>
@@ -8709,6 +8784,20 @@ Source: http://www.tracopower.com/datasheet_g/ten3-d.pdf</description>
 <pinref part="IC1" gate="G$1" pin="VBAT"/>
 <pinref part="G1" gate="1" pin="+"/>
 <wire x1="144.78" y1="-30.48" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="X1"/>
+<pinref part="Q1" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="-20.32" x2="111.76" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="X2"/>
+<pinref part="Q1" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="-25.4" x2="111.76" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
