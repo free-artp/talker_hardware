@@ -1,4 +1,4 @@
-Eagle project about Raspberry PI3 extension board for wood's sort device (p-dok.ru)
+Eagle project about ATMEGA168 for wood's sort device (p-dok.ru)
 
 Print out:
 	Bottom
