@@ -18196,6 +18196,8 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <part name="SUPPLY17" library="supply2" deviceset="GND1" device=""/>
 <part name="P+35" library="supply1" deviceset="+24V" device=""/>
 <part name="U$14" library="MyLib" deviceset="NSI45020AT1G" device="SOD-123"/>
+<part name="C21" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="C0805" value="0.1"/>
 </parts>
 <sheets>
 <sheet>
@@ -18236,12 +18238,12 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <instance part="X3" gate="-2" x="358.14" y="-73.66"/>
 <instance part="X3" gate="-3" x="358.14" y="-99.06"/>
 <instance part="X3" gate="-4" x="358.14" y="-129.54"/>
-<instance part="X4" gate="-1" x="116.84" y="101.6" rot="MR0"/>
-<instance part="X4" gate="-2" x="116.84" y="93.98" rot="MR0"/>
-<instance part="P+2" gate="1" x="121.92" y="109.22" rot="MR0"/>
+<instance part="X4" gate="-1" x="-83.82" y="269.24" rot="MR0"/>
+<instance part="X4" gate="-2" x="-83.82" y="261.62" rot="MR0"/>
+<instance part="P+2" gate="1" x="-78.74" y="276.86" rot="MR0"/>
 <instance part="SUPPLY3" gate="G$1" x="-5.08" y="43.18"/>
 <instance part="SUPPLY4" gate="G$1" x="-5.08" y="12.7"/>
-<instance part="SUPPLY5" gate="G$1" x="134.62" y="91.44" rot="MR0"/>
+<instance part="SUPPLY5" gate="G$1" x="-66.04" y="259.08" rot="MR0"/>
 <instance part="OC3" gate="A" x="5.08" y="-12.7"/>
 <instance part="GND3" gate="1" x="12.7" y="-20.32"/>
 <instance part="U$4" gate="G$1" x="-22.86" y="-10.16"/>
@@ -18270,21 +18272,21 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <instance part="OC10" gate="A" x="279.4" y="7.62"/>
 <instance part="GND13" gate="1" x="269.24" y="2.54"/>
 <instance part="P+6" gate="1" x="287.02" y="17.78"/>
-<instance part="GND24" gate="1" x="299.72" y="124.46"/>
-<instance part="C7" gate="G$1" x="287.02" y="132.08"/>
-<instance part="GND20" gate="1" x="218.44" y="119.38"/>
-<instance part="IC3" gate="G$1" x="218.44" y="129.54"/>
-<instance part="+3V12" gate="G$1" x="243.84" y="137.16"/>
-<instance part="X5" gate="-1" x="167.64" y="129.54" rot="R180"/>
-<instance part="X5" gate="-2" x="167.64" y="121.92" rot="R180"/>
-<instance part="GND21" gate="1" x="190.5" y="119.38"/>
-<instance part="C5" gate="G$1" x="294.64" y="132.08"/>
-<instance part="P+7" gate="1" x="172.72" y="139.7"/>
-<instance part="C1" gate="G$1" x="299.72" y="132.08"/>
-<instance part="C2" gate="G$1" x="190.5" y="127"/>
-<instance part="C3" gate="G$1" x="203.2" y="127"/>
-<instance part="C4" gate="G$1" x="134.62" y="99.06" rot="MR0"/>
-<instance part="C6" gate="G$1" x="129.54" y="99.06" rot="MR0"/>
+<instance part="GND24" gate="1" x="35.56" y="213.36"/>
+<instance part="C7" gate="G$1" x="22.86" y="220.98"/>
+<instance part="GND20" gate="1" x="-45.72" y="208.28"/>
+<instance part="IC3" gate="G$1" x="-45.72" y="218.44"/>
+<instance part="+3V12" gate="G$1" x="-20.32" y="226.06"/>
+<instance part="X5" gate="-1" x="-96.52" y="218.44" rot="R180"/>
+<instance part="X5" gate="-2" x="-96.52" y="210.82" rot="R180"/>
+<instance part="GND21" gate="1" x="-73.66" y="208.28"/>
+<instance part="C5" gate="G$1" x="30.48" y="220.98"/>
+<instance part="P+7" gate="1" x="-91.44" y="228.6"/>
+<instance part="C1" gate="G$1" x="35.56" y="220.98"/>
+<instance part="C2" gate="G$1" x="-73.66" y="215.9"/>
+<instance part="C3" gate="G$1" x="-60.96" y="215.9"/>
+<instance part="C4" gate="G$1" x="-66.04" y="266.7" rot="MR0"/>
+<instance part="C6" gate="G$1" x="-71.12" y="266.7" rot="MR0"/>
 <instance part="IC2" gate="G$1" x="134.62" y="-58.42"/>
 <instance part="Q2" gate="G$1" x="99.06" y="-53.34" rot="R90"/>
 <instance part="C11" gate="G$1" x="96.52" y="-55.88" rot="R270"/>
@@ -18369,12 +18371,12 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <instance part="GND37" gate="1" x="363.22" y="-12.7"/>
 <instance part="P+22" gate="1" x="332.74" y="5.08"/>
 <instance part="GND38" gate="1" x="337.82" y="-12.7"/>
-<instance part="C8" gate="G$1" x="182.88" y="127"/>
-<instance part="C9" gate="G$1" x="175.26" y="127"/>
-<instance part="C10" gate="G$1" x="195.58" y="127"/>
-<instance part="U2" gate="G$1" x="172.72" y="96.52"/>
-<instance part="GND39" gate="1" x="190.5" y="81.28"/>
-<instance part="P+23" gate="1" x="190.5" y="111.76"/>
+<instance part="C8" gate="G$1" x="-81.28" y="215.9"/>
+<instance part="C9" gate="G$1" x="-88.9" y="215.9"/>
+<instance part="C10" gate="G$1" x="-68.58" y="215.9"/>
+<instance part="U2" gate="G$1" x="-27.94" y="264.16"/>
+<instance part="GND39" gate="1" x="-10.16" y="248.92"/>
+<instance part="P+23" gate="1" x="-10.16" y="279.4"/>
 <instance part="X2" gate="-1" x="-88.9" y="38.1" rot="R180"/>
 <instance part="X2" gate="-2" x="-88.9" y="33.02" rot="R180"/>
 <instance part="X2" gate="-3" x="-88.9" y="27.94" rot="R180"/>
@@ -18419,6 +18421,8 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <instance part="SUPPLY17" gate="G$1" x="327.66" y="-137.16"/>
 <instance part="P+35" gate="1" x="327.66" y="-121.92"/>
 <instance part="U$14" gate="G$1" x="342.9" y="-129.54"/>
+<instance part="C21" gate="G$1" x="-2.54" y="269.24"/>
+<instance part="C22" gate="G$1" x="5.08" y="269.24"/>
 </instances>
 <busses>
 </busses>
@@ -18427,20 +18431,20 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <segment>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 <pinref part="IC3" gate="G$1" pin="OUT1"/>
-<wire x1="299.72" y1="134.62" x2="294.64" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="134.62" x2="287.02" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="134.62" x2="243.84" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="134.62" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="134.62" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="223.52" x2="30.48" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="223.52" x2="22.86" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="223.52" x2="-20.32" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="223.52" x2="-38.1" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="223.52" x2="-38.1" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="OUT"/>
-<wire x1="226.06" y1="132.08" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
-<junction x="226.06" y="129.54"/>
-<junction x="226.06" y="132.08"/>
-<junction x="243.84" y="134.62"/>
+<wire x1="-38.1" y1="220.98" x2="-38.1" y2="218.44" width="0.1524" layer="91"/>
+<junction x="-38.1" y="218.44"/>
+<junction x="-38.1" y="220.98"/>
+<junction x="-20.32" y="223.52"/>
 <pinref part="C7" gate="G$1" pin="1"/>
-<junction x="287.02" y="134.62"/>
+<junction x="22.86" y="223.52"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<junction x="294.64" y="134.62"/>
+<junction x="30.48" y="223.52"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 </segment>
 <segment>
@@ -18490,15 +18494,15 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
-<wire x1="243.84" y1="127" x2="287.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="127" x2="294.64" y2="127" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="215.9" x2="22.86" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="215.9" x2="30.48" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<junction x="287.02" y="127"/>
+<junction x="22.86" y="215.9"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="127" x2="299.72" y2="127" width="0.1524" layer="91"/>
-<junction x="294.64" y="127"/>
+<wire x1="30.48" y1="215.9" x2="35.56" y2="215.9" width="0.1524" layer="91"/>
+<junction x="30.48" y="215.9"/>
 <pinref part="C1" gate="G$1" pin="-"/>
-<junction x="299.72" y="127"/>
+<junction x="35.56" y="215.9"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
@@ -18508,19 +18512,19 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="190.5" y1="121.92" x2="195.58" y2="121.92" width="0.1524" layer="91"/>
-<junction x="190.5" y="121.92"/>
+<wire x1="-73.66" y1="210.82" x2="-68.58" y2="210.82" width="0.1524" layer="91"/>
+<junction x="-73.66" y="210.82"/>
 <pinref part="X5" gate="-2" pin="S"/>
-<wire x1="195.58" y1="121.92" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="121.92" x2="175.26" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="210.82" x2="-60.96" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="210.82" x2="-88.9" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="121.92" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
-<junction x="182.88" y="121.92"/>
+<wire x1="-88.9" y1="210.82" x2="-81.28" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="210.82" x2="-73.66" y2="210.82" width="0.1524" layer="91"/>
+<junction x="-81.28" y="210.82"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<junction x="175.26" y="121.92"/>
+<junction x="-88.9" y="210.82"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<junction x="195.58" y="121.92"/>
+<junction x="-68.58" y="210.82"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="1"/>
@@ -18709,7 +18713,14 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <segment>
 <pinref part="U2" gate="G$1" pin="-V0UT"/>
 <pinref part="GND39" gate="1" pin="GND"/>
-<wire x1="190.5" y1="88.9" x2="190.5" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="256.54" x2="-10.16" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="256.54" x2="-10.16" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="264.16" x2="-2.54" y2="264.16" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="264.16" x2="5.08" y2="264.16" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="264.16" x2="27.94" y2="264.16" width="0.1524" layer="91"/>
+<junction x="5.08" y="264.16"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -18756,17 +18767,17 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <segment>
 <pinref part="X4" gate="-1" pin="KL"/>
 <pinref part="P+2" gate="1" pin="+24V"/>
-<wire x1="121.92" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="106.68" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="269.24" x2="-81.28" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="274.32" x2="-78.74" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="269.24" x2="-71.12" y2="269.24" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="+"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="101.6" x2="134.62" y2="101.6" width="0.1524" layer="91"/>
-<junction x="129.54" y="101.6"/>
+<wire x1="-71.12" y1="269.24" x2="-66.04" y2="269.24" width="0.1524" layer="91"/>
+<junction x="-71.12" y="269.24"/>
 <pinref part="U2" gate="G$1" pin="+VIN@2"/>
-<wire x1="134.62" y1="101.6" x2="154.94" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="269.24" x2="-45.72" y2="269.24" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="+VIN@1"/>
-<wire x1="154.94" y1="101.6" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="269.24" x2="-45.72" y2="271.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OC7" gate="A" pin="COL"/>
@@ -19042,17 +19053,17 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <segment>
 <pinref part="X4" gate="-2" pin="KL"/>
 <pinref part="SUPPLY5" gate="G$1" pin="GND1"/>
-<wire x1="119.38" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="261.62" x2="-71.12" y2="261.62" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="-"/>
-<junction x="134.62" y="93.98"/>
+<junction x="-66.04" y="261.62"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
-<junction x="129.54" y="93.98"/>
+<wire x1="-71.12" y1="261.62" x2="-66.04" y2="261.62" width="0.1524" layer="91"/>
+<junction x="-71.12" y="261.62"/>
 <pinref part="U2" gate="G$1" pin="-VIN@1"/>
-<wire x1="134.62" y1="93.98" x2="154.94" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="93.98" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="261.62" x2="-45.72" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="261.62" x2="-45.72" y2="259.08" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="-VIN@2"/>
-<wire x1="154.94" y1="91.44" x2="154.94" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="259.08" x2="-45.72" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OC11" gate="A" pin="C"/>
@@ -19287,25 +19298,25 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 </segment>
 <segment>
 <pinref part="X5" gate="-1" pin="S"/>
-<wire x1="170.18" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="129.54" x2="172.72" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="218.44" x2="-91.44" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="218.44" x2="-91.44" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <pinref part="IC3" gate="G$1" pin="IN"/>
-<wire x1="210.82" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
-<label x="198.12" y="129.54" size="1.778" layer="95"/>
+<wire x1="-53.34" y1="218.44" x2="-60.96" y2="218.44" width="0.1524" layer="91"/>
+<label x="-66.04" y="218.44" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="203.2" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="129.54" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="129.54" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="218.44" x2="-68.58" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="218.44" x2="-73.66" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="218.44" x2="-81.28" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
-<junction x="182.88" y="129.54"/>
+<wire x1="-81.28" y1="218.44" x2="-88.9" y2="218.44" width="0.1524" layer="91"/>
+<junction x="-81.28" y="218.44"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
-<junction x="175.26" y="129.54"/>
+<wire x1="-88.9" y1="218.44" x2="-91.44" y2="218.44" width="0.1524" layer="91"/>
+<junction x="-88.9" y="218.44"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<junction x="195.58" y="129.54"/>
+<junction x="-68.58" y="218.44"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
@@ -19410,7 +19421,14 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <segment>
 <pinref part="U2" gate="G$1" pin="+VOUT"/>
 <pinref part="P+23" gate="1" pin="+5V"/>
-<wire x1="190.5" y1="104.14" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="271.78" x2="-10.16" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="271.78" x2="-2.54" y2="271.78" width="0.1524" layer="91"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="271.78" x2="5.08" y2="271.78" width="0.1524" layer="91"/>
+<junction x="-2.54" y="271.78"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="271.78" x2="27.94" y2="271.78" width="0.1524" layer="91"/>
+<junction x="5.08" y="271.78"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -19763,8 +19781,9 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <pinref part="R9" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="PD5(T1)"/>
-<wire x1="160.02" y1="-68.58" x2="182.88" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="PB1(OC1A)"/>
+<wire x1="160.02" y1="-81.28" x2="182.88" y2="-81.28" width="0.1524" layer="91"/>
+<label x="170.18" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SD_DETECT" class="0">
@@ -19794,9 +19813,9 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <label x="162.56" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="PB0(ICP)"/>
-<wire x1="160.02" y1="-78.74" x2="182.88" y2="-78.74" width="0.1524" layer="91"/>
-<label x="177.8" y="-78.74" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="PD4(XCK/T0)"/>
+<wire x1="160.02" y1="-66.04" x2="182.88" y2="-66.04" width="0.1524" layer="91"/>
+<label x="172.72" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$48" class="0">
