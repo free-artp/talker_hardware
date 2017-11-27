@@ -18449,8 +18449,8 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <part name="P+17" library="supply1" deviceset="+5V" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="3k3"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="3k3"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="X6" library="con-molex" deviceset="22-23-2041" device=""/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="X5" library="con-molex" deviceset="22-23-2051" device=""/>
@@ -20053,7 +20053,7 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <wire x1="78.74" y1="-73.66" x2="78.74" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="B" class="0">
+<net name="B+" class="0">
 <segment>
 <pinref part="Z2" gate="G$1" pin="2"/>
 <pinref part="D17" gate="G$1" pin="P$2"/>
@@ -20067,7 +20067,7 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <label x="335.28" y="236.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A" class="0">
+<net name="A-" class="0">
 <segment>
 <pinref part="D17" gate="G$1" pin="P$1"/>
 <wire x1="320.04" y1="236.22" x2="320.04" y2="264.16" width="0.1524" layer="91"/>
@@ -20681,6 +20681,20 @@ http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf<
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="281.94" y1="147.32" x2="294.64" y2="147.32" width="0.1524" layer="91"/>
 <junction x="281.94" y="147.32"/>
+</segment>
+</net>
+<net name="Y" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="Y"/>
+<wire x1="251.46" y1="243.84" x2="297.18" y2="243.84" width="0.1524" layer="91"/>
+<label x="287.02" y="243.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="Z" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="Z"/>
+<wire x1="251.46" y1="241.3" x2="297.18" y2="241.3" width="0.1524" layer="91"/>
+<label x="287.02" y="241.3" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
